@@ -1,0 +1,22 @@
+{
+  "name": "template-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wooritech/template-monorepo.git",
+  "author": "Malloc72P <scra1028@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "private": true,
+  "devDependencies": {
+    "turbo": "^1.6.3",
+    "husky": "^8.0.0"
+  }
+}

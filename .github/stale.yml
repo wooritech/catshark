@@ -1,0 +1,60 @@
+# stale bot: https://github.com/probot/stale
+# - stale 의미: 내용이 오랫동안 업데이트 되지 않은
+# - stale 이슈에는 풀리퀘스트도 포함되며, 편의상 이슈로만 표기함
+
+# 이슈를 stale 상태로 전환하기까지 걸리는 일 수
+daysUntilStale: 30
+
+# stale 이슈가 자동으로 close 되기까지 걸리는 일 수 (`false`로 설정하면, 이슈를 자동으로 close하지 않음)
+# daysUntilClose: 7
+daysUntilClose: false
+
+# stale 관리에서 포함할 레이블 목록 (기본값은 []로 비활성화를 의미함)
+# onlyLabels: []
+
+# stale 관리에서 제외할 레이블 목록
+exemptLabels:
+  - v2
+  - 계획
+
+# 프로젝트에 포함된 이슈는 제외 (기본값: false)
+# exemptProjects: false
+
+# 마일드스톤에 포함된 이슈는 제외 (기본값: false)
+# exemptMilestones: false
+
+# 담당자가 지정된 이슈는 제외 (기본값: false)
+# exemptAssignees: false
+
+# stale 이슈에 설정할 레이블
+staleLabel: '오랫동안 방치된'
+
+# 이슈가 stale 상태가 될 때, 추가할 댓글 내용 (`false`로 설정하면, 댓글을 추가하지 않음)
+markComment: >
+  60일 동안 이슈의 활동 내역이 없으므로 `오랫동안 방치된` 라벨이 설정되었습니다.
+
+#   This issue has been automatically marked as stale because it has not had
+#   recent activity. It will be closed if no further activity occurs. Thank you
+#   for your contributions.
+
+# stale 이슈를 close 할 때, 추가할 댓글 내용
+# closeComment: >
+#   Your comment here.
+
+# Limit the number of actions per hour, from 1-30. Default is 30
+# 시간당 검사할 이슈 개수 (1-30, 기본값: 30)
+# limitPerRun: 30
+
+# `issues` 또는 `pulls`에만 적용
+# only: issues
+
+# 필요에 따라, 'issues' 또는 'pulls'에만 적용할 옵션을 설정할 수 있음
+# pulls:
+#   daysUntilStale: 30
+#   markComment: >
+#     This pull request has been automatically marked as stale because it has not had
+#     recent activity. It will be closed if no further activity occurs. Thank you
+#     for your contributions.
+# issues:
+#   exemptLabels:
+#     - confirmed
