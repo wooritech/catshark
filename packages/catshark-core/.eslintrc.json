@@ -1,0 +1,4 @@
+{
+    "extends": ["@wooritech/eslint-config-wooritech"],
+    "ignorePatterns": ["dist"]
+}
