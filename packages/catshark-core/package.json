@@ -1,8 +1,20 @@
 {
   "name": "catshark-core",
-  "private": true,
-  "version": "0.0.0",
-  "types": "",
+  "version": "0.1.0-alpha.1",
+  "main": "dist/catshark-core.cjs",
+  "module": "dist/catshark-core.js",
+  "files": [
+    "dist/**/*"
+  ],
+  "keywords": [
+    "react",
+    "wooritech"
+  ],
+  "homepage": "https://catshark.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wooritech/catshark"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
