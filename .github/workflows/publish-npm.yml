@@ -3,9 +3,17 @@ name: Publish Package to GitHub Packages
 on:
   release:
     types: [published]
+    paths:
+      - ".github/workflows/publish-npm.yml",
+      - "packages/catshark-core",
+      
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: "packages/catshark-core"
+
     steps:
       - uses: actions/checkout@v3
 
