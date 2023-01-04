@@ -18,6 +18,6 @@
     "@vitejs/plugin-react": "^3.0.0",
     "typescript": "^4.9.3",
     "vite": "^4.0.0",
-    "@wooritech/catshark-core": "0.1.0-alpha.2"
+    "@wooritech/catshark-core": "*"
   }
 }
