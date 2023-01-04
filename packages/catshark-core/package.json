@@ -1,6 +1,6 @@
 {
   "name": "@wooritech/catshark-core",
-  "version": "0.1.0-alpha.4",
+  "version": "0.1.0-alpha.5",
   "main": "dist/catshark-core.cjs",
   "module": "dist/catshark-core.js",
   "types": "dist/index.d.ts",
