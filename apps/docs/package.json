@@ -11,8 +11,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^1.8.0",
-    "@wooritech/catshark-core": "^0.1.0-alpha.4"
+    "@astrojs/mdx": "^0.14.0",
+    "@wooritech/catshark-core": "^0.1.0-alpha.4",
+    "astro": "^1.8.0"
   },
   "devDependencies": {
     "@astrojs/react": "^1.2.2",
