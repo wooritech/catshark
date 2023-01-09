@@ -1,0 +1,52 @@
+---
+import { Icon } from 'astro-icon';
+import { Picture } from '@astrojs/image/components';
+---
+
+<section>
+	<div class="max-w-6xl mx-auto px-4 sm:px-6">
+		<div class="py-12 md:py-20">
+			<div class="text-center pb-10 md:pb-16 max-w-5xl mx-auto">
+				<h1 class="text-5xl md:text-[3.50rem] font-bold leading-tighter tracking-tighter mb-4 font-heading">
+					CatShark UI
+				</h1>
+				<div class="max-w-3xl mx-auto">
+					<p class="text-xl text-gray-600 mb-8 dark:text-slate-400">
+						<span class="font-semibold underline decoration-wavy decoration-1 decoration-primary-600 underline-offset-2"
+							>CatShark</span> 
+						<span>는 우리테크 서비스 개발팀에서 만든 리액트 기반 UI 컴포넌트 라이브러리예요.</span>
+						<span>Refactoring UI를 참고해서 만들었어요! ✨</span>
+					</p>
+					<div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
+						<div class="flex w-full sm:w-auto">
+							<a
+								class="btn btn-primary sm:mb-0 w-full"
+								href="/blog"
+							>
+								<Icon name="tabler:search" class="w-5 h-5 mr-1 -ml-1.5" /> 둘러보기
+							</a>
+						</div>
+						<div class="flex w-full sm:w-auto">
+							<a class="btn w-full" href="https://github.com/wooritech/catshark">Github</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="relative m-auto max-w-4xl">
+					<Picture
+						src={import('~/assets/images/hero2.jpg')}
+						class="mx-auto rounded-md w-full"
+						widths={[400, 768, 1480]}
+						sizes="(max-width: 767px) 400px, (max-width: 1479px) 768px, 1480px"
+						alt="Hero Image"
+						aspectRatio={1480 / 833}
+						loading="eager"
+						width={1480}
+						height={833}
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
