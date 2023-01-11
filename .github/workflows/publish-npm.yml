@@ -1,11 +1,8 @@
 # 참고: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages#publishing-packages-to-the-npm-registry
 name: Publish Package to GitHub Packages
 on:
-  # release:
-  #   types: [published]
-  push:
-    branches:
-      - "tov324/fix-dep-error"
+  release:
+    types: [published]
 
 jobs:
   build:
