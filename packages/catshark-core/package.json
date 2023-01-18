@@ -23,10 +23,11 @@
     "preview": "vite preview",
     "lint": "eslint . --fix",
     "publish": "pnpm build && pnpm publish --access public ",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
